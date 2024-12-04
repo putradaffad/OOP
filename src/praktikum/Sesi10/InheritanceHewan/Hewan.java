@@ -1,82 +1,75 @@
 package praktikum.Sesi10.InheritanceHewan;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 public class Hewan {
     protected String suara;
 
-    public Hewan() {
-        this.suara = "suara";
-    }
+        public Hewan(){
+            this.suara = "Suara";
+        }
 
-    public void cetak(){
-        System.out.println("Suara hewan ini adalah " + suara);
+        public void cetak(){
+            System.out.println("Hewan Bersuara" + suara);
+        }
     }
-}
-
-class Mamalia extends Hewan {
+class Mamalia extends Hewan{
     protected String berkembangbiak;
 
-    public Mamalia() {
+    public Mamalia(){
         this.berkembangbiak = "beranak";
     }
-
     public void cetak(){
-        System.out.println("Mamalia berkembang biak dengan cara " + berkembangbiak);
+        System.out.println("Mamalia Berkembang biak" + berkembangbiak);
     }
 }
 
-class Sapi extends Mamalia {
+class Sapi extends Mamalia{
     private String nama;
     private String umur;
 
     public Sapi(){
-        suara="Moo";
-        berkembangbiak="beranak";
-        this.nama = "radit";
-        this.umur = "10 tahun";
+        suara = "Hemoh...";
+        berkembangbiak = "beranak";
+        this.nama = "Sopi";
+        this.umur = "1";
     }
 
-        public void cetak(){
-            System.out.println("\n===== Data Hewan Mamalia Sapi =====");
-            System.out.println("Suara : " + suara);
-            System.out.println("Berkembang biak : " + berkembangbiak);
-            System.out.println("Nama : " + nama);
-            System.out.println("Umur : " + umur);
-        }
+    public void cetak(){
+        System.out.println("======== Data Hewan Mamalia Sapi =========");
+         System.out.println("Suara          : " + suara);
+          System.out.println("Berkembang Biak : " + berkembangbiak);
+           System.out.println("Nama             : " + nama);
+            System.out.println("Umur              : " + umur + " Tahun");
+    }
 }
-
 class Kambing extends Mamalia{
     private String nama;
     private String umur;
 
     public Kambing(){
-        suara="Mbee";
-        berkembangbiak="beranak";
-        this.nama = "radit 2";
-        this.umur = "5 tahun";
+        suara = "Embek...";
+        berkembangbiak = "Beranak";
+        this.nama = "Si Ling";
+        this.umur = "2";
     }
 
-        public void cetak(){
-            System.out.println("\n===== Data Hewan Mamalia Kambing =====");
-            System.out.println("Suara : " + suara);
-            System.out.println("Berkembang biak : " + berkembangbiak);
-            System.out.println("Nama : " + nama);
-            System.out.println("Umur : " + umur);
-        }
+    public void cetak(){
+        System.out.println("======== Data Hewan Mamalia Kambing =========");
+         System.out.println("Suara          : " + suara);
+          System.out.println("Berkembang Biak : " + berkembangbiak);
+           System.out.println("Nama             : " + nama);
+            System.out.println("Umur              : " + umur + " Tahun");
+    }
 }
 
 class Unggas extends Hewan{
     protected String berkembangbiak;
 
-    public Unggas() {
-        this.berkembangbiak = "bertelur";
+    public Unggas(){
+        this.berkembangbiak = "Bertelur";
     }
 
     public void cetak(){
-        System.out.println("Unggas berkembang biak dengan cara " + berkembangbiak);
+        System.out.println("Bertelur");
     }
 }
 
@@ -84,19 +77,19 @@ class Burung extends Unggas{
     private String jenis;
     private String ciri;
 
-    public Burung(){
-        suara="Mbeekur...";
-        berkembangbiak="bertelur";
-        this.jenis = "Merpati";
-        this.ciri = "Bulu Putih";
+        public Burung(){
+            suara = "Mbekur....";
+            berkembangbiak = "Bertelur";
+            this.jenis = "Merpati";
+            this.ciri = "Bulu Putih";
     }
 
     public void cetak(){
-        System.out.println("\n===== Data Hewan Unggas Burung =====");
-        System.out.println("Suara : " + suara);
-        System.out.println("Berkembang biak : " + berkembangbiak);
-        System.out.println("Jenis : " + jenis);
-        System.out.println("Ciri : " + ciri);
+        System.out.println("======== Data Hewan Unggas Burung =========");
+         System.out.println("Suara          : " + suara);
+          System.out.println("Berkembang Biak : " + berkembangbiak);
+           System.out.println("Nama             : " + jenis);
+            System.out.println("Ciri              : " + ciri);
     }
 }
 
@@ -104,51 +97,51 @@ class Ayam extends Unggas{
     private String jenis;
     private String ciri;
 
-    public Ayam(){
-        suara="Kukuruyuk...";
-        berkembangbiak="bertelur";
-        this.jenis = "Ayam Kampung";
-        this.ciri = "Bulu Hitam";
+        public Ayam(){
+            suara = "Petok-Petok....";
+            berkembangbiak = "Bertelur";
+            this.jenis = "Ayam Kampung";
+            this.ciri = "Bulu Bercorak Putih Hitam";
     }
 
     public void cetak(){
-        System.out.println("\n===== Data Hewan Unggas Ayam =====");
-        System.out.println("Suara : " + suara);
-        System.out.println("Berkembang biak : " + berkembangbiak);
-        System.out.println("Jenis : " + jenis);
-        System.out.println("Ciri : " + ciri);
+        System.out.println("======== Data Hewan Unggas Ayam =========");
+         System.out.println("Suara          : " + suara);
+          System.out.println("Berkembang Biak : " + berkembangbiak);
+           System.out.println("Nama             : " + jenis);
+            System.out.println("Ciri              : " + ciri);
     }
 }
 
-class Ikan extends Hewan {
+class Ikan extends Hewan{
     protected String napas;
 
-    public Ikan() {
-        this.napas = "insang";
+    public Ikan(){
+        this.napas = "Insang";
     }
 
     public void cetak(){
-        System.out.println("Ikan bernapas dengan " + napas);
+        System.out.println("Insang");
     }
 }
 
-class Gurame extends Ikan{
+class Gurami extends Ikan{
     private String ciri;
     private String berat;
 
-    public Gurame(){
-        suara="Blublub...";
-        napas="insang";
-        this.ciri = "Bewarna Hitam";
-        this.berat = "5 kg";
+        public Gurami(){
+            suara = "-----";
+            napas = "Insang";
+            this.ciri = "Berwarna Hitam";
+            this.berat = "2";
     }
 
     public void cetak(){
-        System.out.println("\n===== Data Hewan Ikan Gurame =====");
-        System.out.println("Suara : " + suara);
-        System.out.println("Napas : " + napas);
-        System.out.println("Ciri : " + ciri);
-        System.out.println("Berat : " + berat);
+        System.out.println("======== Data Hewan Ikan Gurami =========");
+         System.out.println("Suara          : " + suara);
+          System.out.println("Bernapas        : " + napas);
+           System.out.println("Ciri             : " + ciri);
+            System.out.println("Berat              : " + berat + "Kg");
     }
 }
 
@@ -156,56 +149,45 @@ class Lele extends Ikan{
     private String ciri;
     private String berat;
 
-    public Lele(){
-        suara="Blublub...";
-        napas="insang";
-        this.ciri = "Bewarna Hitam Keputihan";
-        this.berat = "2 kg";
+        public Lele(){
+            suara = "-----";
+            napas = "Insang";
+            this.ciri = "Berwarna Hitam Keputihan";
+            this.berat = "3";
     }
 
     public void cetak(){
-        System.out.println("\n===== Data Hewan Ikan Lele =====");
-        System.out.println("Suara : " + suara);
-        System.out.println("Napas : " + napas);
-        System.out.println("Ciri : " + ciri);
-        System.out.println("Berat : " + berat);
+        System.out.println("======== Data Hewan Ikan Gurami =========");
+         System.out.println("Suara          : " + suara);
+          System.out.println("Bernapas        : " + napas);
+           System.out.println("Ciri             : " + ciri);
+            System.out.println("Berat              : " + berat + "Kg");
     }
 }
 
-class Main {
+class Pewarisan{
     public static void main(String[] args) {
-        if (!isValidEnvironment()) {
-            System.err.println("Error: Program tidak dapat dijalankan di lingkungan ini.");
-            return;
-        }
+        Sapi spi = new Sapi();
+        spi.cetak();
+                System.out.println("");
 
-        System.out.println("Environment valid, melanjutkan program...");
+        Kambing kmb1 = new Kambing();
+        kmb1.cetak();
+                System.out.println("");
 
-        Sapi sapi = new Sapi();
-        sapi.cetak();
+        Burung brg1 = new Burung();
+        brg1.cetak();
+                System.out.println("");
 
-        Kambing kambing = new Kambing();
-        kambing.cetak();
+        Ayam aym1 = new Ayam();
+        aym1.cetak();
+                System.out.println("");
 
-        Burung burung = new Burung();
-        burung.cetak();
+        Gurami grm1 = new Gurami();
+        grm1.cetak();
+                System.out.println("");
 
-        Ayam ayam = new Ayam();
-        ayam.cetak();
-
-        Gurame gurame = new Gurame();
-        gurame.cetak();
-
-        Lele lele = new Lele();
-        lele.cetak();
-    }
-
-    private static boolean isValidEnvironment() {
-        String secretKey = System.getenv("MY_SECRET_KEY");
-        if (secretKey == null) {
-            System.err.println("Error: MY_SECRET_KEY tidak ditemukan dalam variabel lingkungan.");
-            return false;
-        }
-        return "expected_secret_key".equals(secretKey);
+        Lele ll1 = new Lele();
+        ll1.cetak();
     }
 }

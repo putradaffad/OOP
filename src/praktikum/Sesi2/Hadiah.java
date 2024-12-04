@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 public class Hadiah {
     /**
      * @param args
@@ -19,6 +21,7 @@ public class Hadiah {
          }
          System.out.println("Terima Kasih....");
 
+         scan.close();
     }
 }
 

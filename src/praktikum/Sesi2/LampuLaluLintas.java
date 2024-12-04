@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 public class LampuLaluLintas {
     public static void main(String[] args) {
         //Membuat Variabel dan Scanner
@@ -24,5 +26,7 @@ public class LampuLaluLintas {
                 System.out.println("Warna Lampu Salah");
             
         }
+
+        scan.close();
     }
 }

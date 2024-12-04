@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 public class HitungRataRata {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -19,5 +21,7 @@ public class HitungRataRata {
 
         double rataRata = totalNilai / jumlahNilai;
         System.out.println("Rata-rata nilai: " + rataRata);
+
+        input.close();
     }
 }

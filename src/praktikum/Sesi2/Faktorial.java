@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 public class Faktorial {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -16,5 +18,7 @@ public class Faktorial {
         }
 
         System.out.println("Faktorial dari " + angka + " adalah " + faktorial);
+
+        input.close();
     }
 }

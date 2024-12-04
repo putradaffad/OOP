@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 //Program IF dengan dua kondisi
 public class CekKelulusan {
     public static void main(String[] args) {
@@ -16,5 +18,7 @@ public class CekKelulusan {
         } else {
             System.out.println("Maaf " + nama + ", Anda Tidak Lulus");
         }
+
+        scan.close();
     }
 }

@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 public class HitungGrade {
     public static void main(String[] args) {
         //Membuat variabel  dan scanner
@@ -30,6 +32,7 @@ public class HitungGrade {
 
         //Cetak Hasil
         System.out.println("Grade : " + grade);
-
+        
+        scan.close();
     }
 }

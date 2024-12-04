@@ -1,5 +1,7 @@
 package praktikum.Sesi2;
+
 import java.util.Scanner;
+
 public class HurufDigit {
     /**
      * @param args
@@ -20,5 +22,7 @@ public class HurufDigit {
         }else {
             System.out.println(karakter + " bukan huruf atau digit");
         }
+
+        scan.close();
        }
 }
