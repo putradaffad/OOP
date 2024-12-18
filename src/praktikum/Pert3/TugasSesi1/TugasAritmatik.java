@@ -1,4 +1,4 @@
-package praktikum.Sesi1.TugasSesi1;
+package praktikum.Pert3.TugasSesi1;
 
 import java.util.Scanner;
 

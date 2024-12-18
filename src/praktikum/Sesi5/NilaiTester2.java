@@ -28,7 +28,7 @@ class Nilai {
     public double getUAS() { // Getter untuk mendapatkan nilai UAS
         return UAS;
     }
-
+    
     public double getNA() { // Metode untuk menghitung Nilai Akhir (NA) berdasarkan bobot
         return 0.20 * quiz + 0.30 * UTS + 0.50 * UAS;
     }

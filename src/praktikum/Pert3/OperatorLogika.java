@@ -1,4 +1,4 @@
-package praktikum.Sesi1;
+package praktikum.Pert3;
 
 public class OperatorLogika {
     public static void main(String[] args) {

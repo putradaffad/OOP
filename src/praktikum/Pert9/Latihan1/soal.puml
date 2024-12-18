@@ -1,0 +1,39 @@
+@startuml soal.puml
+interface Engine {
+    + startEngine() : void
+    + stopEngine() : void
+}
+
+abstract class Vehicle {
+    - String model
+    - String color
+    - int year
+    + Vehicle(String model, String color, int year)
+    + move() : void
+}
+
+class Car {
+    + startEngine() : void
+    + stopEngine() : void
+    + move() : void
+}
+
+class Motorcycle {
+    + startEngine() : void
+    + stopEngine() : void
+    + move() : void
+}
+
+class Main {
+    + main(String[] args) : void
+}
+
+Vehicle <|-- Car
+Vehicle <|-- Motorcycle
+Engine <|.. Car
+Engine <|.. Motorcycle
+
+Main --> Car : creates
+Main --> Motorcycle : creates
+
+@enduml
