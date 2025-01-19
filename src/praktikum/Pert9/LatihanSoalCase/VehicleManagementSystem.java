@@ -1,4 +1,4 @@
-package praktikum.Pert9.Latihan1;
+package praktikum.Pert9.LatihanSoalCase;
 
 // Interface Engine
 interface Engine {
